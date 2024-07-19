@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Panel</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <!-- Logo -->
+            <div class="top">
+                <h1>Logo</h1>
+            </div>
+
+            <!-- Tree Menu -->
+            <div class="menu">
+                <ul class="tree">
+                    <li class="parent">
+                        <div>
+                            <i class="icon">
+                                <img src="./icons/icon128.png" alt="">
+                            </i>
+                            <span>Parent 1</span>
+                        </div>
+                        <ul class="nested">
+                            <li class="parent">Child 1
+                                <ul class="nested">
+                                    <li>Subchild 1</li>
+                                    <li>Subchild 2</li>
+                                </ul>
+                            </li>
+                            <li>Child 2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="content">
+            <div class="header">
+                <!-- Search -->
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                    <!-- <button>Search</button> -->
+                </div>
+
+                <!-- Navigation -->
+                <div class="nav">
+                    <span>导出</span>
+                    <span>官网</span>
+                    <span>模式</span>
+                </div>
+            </div>
+
+            <div class="main">
+                <div class="content-left">
+                    <!-- Recent Tabs -->
+                    <div class="recent">
+                        <h2>最近打开</h2>
+                        <ul>
+                            <li>
+                                <i><img src="" alt=""></i>
+                                <p>Tab 1aaaaaa</p>
+                            </li>
+                            <li>
+                                <i><img src="" alt=""></i>
+                                <p>Tab 1哈哈哈1111</p>
+                            </li>
+                            <li>
+                                <i><img src="" alt=""></i>
+                                <p>Tab 111111111</p>
+                            </li>
+                        </ul>
+                    </div>
+                
+                    <!-- My Collections -->
+                    <div class="collection">
+                        <h2>我的收藏</h2>
+                        <ul>
+                            <li>
+                                <i><img src="./icons/icon128.png" alt=""></i>
+                                <div>
+                                    <h3>哈哈哈哈哈哈</h3>
+                                    <p>www.baidu.com</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i><img src="./icons/icon128.png" alt=""></i>
+                                <div>
+                                    <h3>哈哈哈哈哈哈</h3>
+                                    <p>www.baidu.com</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i><img src="./icons/icon128.png" alt=""></i>
+                                <div>
+                                    <h3>哈哈哈哈哈哈</h3>
+                                    <p>www.baidu.com</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <i><img src="./icons/icon128.png" alt=""></i>
+                                <div>
+                                    <h3>哈哈哈哈哈哈</h3>
+                                    <p>www.baidu.com</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <i><img src="./icons/icon128.png" alt=""></i>
+                                <div>
+                                    <h3>哈哈哈哈哈哈</h3>
+                                    <p>www.baidu.com</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <i><img src="./icons/icon128.png" alt=""></i>
+                                <div>
+                                    <h3>哈哈哈哈哈哈</h3>
+                                    <p>www.baidu.com</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <i><img src="./icons/icon128.png" alt=""></i>
+                                <div>
+                                    <h3>哈哈哈哈哈哈</h3>
+                                    <p>www.baidu.com</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Current Tabs -->
+                <div class="tabs">
+                    <h2>当前浏览器Tabs</h2>
+                    <ul>
+                        <li>
+                            <img src="./icons/icon128.png" alt="">
+                            <p>Current Tab 1</p>
+                        </li>
+                        <li>
+                            <img src="./icons/icon128.png" alt="">
+                            <p>Current Tab 1</p>
+                        </li>
+                        <li>
+                            <img src="./icons/icon128.png" alt="">
+                            <p>Current Tab 1</p>
+                        </li>
+                        <li>
+                            <img src="./icons/icon128.png" alt="">
+                            <p>Current Tab 11111</p>
+                        </li>
+                        <li>
+                            <img src="./icons/icon128.png" alt="">
+                            <p>Current Tab 1</p>
+                        </li>
+                        <li>
+                            <img src="./icons/icon128.png" alt="">
+                            <p>Current Tab 1</p>
+                        </li>
+                        <li>
+                            <img src="./icons/icon128.png" alt="">
+                            <p>Current Tab 1</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let parents = document.querySelectorAll('.parent > div');
+
+            parents.forEach(parent => {
+                parent.addEventListener('click', function (event) {
+                    let liParent = this.parentElement; // Get the parent <li>
+                    liParent.classList.toggle('active');
+                    let nested = liParent.querySelector('.nested');
+                    if (nested) {
+                        nested.classList.toggle('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+<style>
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.left {
+    width: 220px;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.top {
+    text-align: center;
+}
+
+.menu {
+    padding: 10px 0;
+}
+
+.tree {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tree li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.tree ul {
+    padding-left: 20px;
+    display: none;
+}
+
+.tree .active > .nested {
+    display: block;
+}
+
+.content {
+    width: calc(100% - 220px);
+}
+
+.header {
+    width: 100%;
+    height: 68px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search {
+    display: flex;
+    margin-left: 16px;
+}
+
+.search input[type="text"] {
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.search button {
+    padding: 8px 15px;
+    font-size: 14px;
+    /* background-color: #007bff; */
+    color: #fff;
+    /* border: 1px solid #007bff; */
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.nav {
+    margin-right: 20px;
+}
+
+.nav span {
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333333;
+}
+
+.main {
+    display: flex;
+    padding: 10px 28px;
+}
+
+.content-left {
+    width: 75%;
+    padding-right: 20px;
+}
+
+.recent, .collection, .tabs {
+    margin-bottom: 20px;
+}
+
+.recent h2, .collection h2, .tabs h2 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: .6px;
+}
+
+.recent ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(68px, 1fr)); /* 自适应数量 */
+    grid-gap: 18px;
+    padding-inline-start: 0;
+}
+
+.recent li {
+    width: 100%;
+    background: #999999;
+    list-style: none;
+    border-radius: 16px;
+    background: #fff;
+    cursor: pointer;
+}
+.recent li i{
+    display: flex;
+    width: 68px;
+    height: 68px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+.recent li i:hover{
+    /* 向上 */
+    transform: translateY(-5px);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.recent li p{
+    width: 100%;
+    text-align: center;
+    line-height: 13px;
+    font-size: 13px;
+    color: #333333;
+    margin-top: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.recent li:last-child, .collection li:last-child, .tabs li:last-child {
+    border-bottom: none;
+}
+.collection ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 自适应数量 */
+    grid-gap: 22px;
+    padding-inline-start: 0;
+}
+.collection ul li{
+    width: 100%;
+    height: 80px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.collection ul li div{
+    margin-left: 16px;
+}
+.collection ul li i{
+    width: 50px;
+    height: 50px;
+    background: #ebebeb;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+}
+.collection ul li i img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+.collection ul li h3{
+    font-size: 15px;
+    line-height: 10px;
+}
+.collection ul li p{
+    font-size: 14px;
+    color: #999999;
+    line-height: 10px;
+    font-weight: 300;
+}
+
+.tabs ul{
+    padding-inline-start: 0px;
+}
+.tabs ul li{
+    height: 38px;
+    width: 100%;
+    /* background: #f2f2f2; */
+    border-radius: 10px;
+    padding: 0 6px;
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    transition: 0.2s ease-in-out;
+}
+.tabs ul li:hover{
+    background: #f1f1f1;
+}
+.tabs ul li img{
+    width: 28px;
+    height: 28px;
+    border-radius: 10%;
+}
+.tabs ul li p{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 18px;
+}
+.icon{
+    width: 28px;
+    height: 28px;
+}
+.icon img{
+    width: 28px;
+    height: 28px;
+}
+</style>
+</html>
