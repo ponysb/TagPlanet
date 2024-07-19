@@ -7,7 +7,7 @@ Tag Planet is a browser-based tab management tool that allows you to easily mana
 ![](./assets/img1.png)
 
 # Product Features
-- **Tab Management**: Easily manage your tabs and tag them, turning your browser into a dashboard.
+- **Tab Management**: You can easily manage your browser bookmarks, automatically convert bookmark data into navigation, and turn your browser into a dashboard.
 - **Recent Visits**: Displays the last 10 websites visited at the top, so you can easily recover any tabs you accidentally closed.
 - **Tab Bar Management**: If you have too many websites open in your browser, the default tab bar can get too crowded. Tag Planet uses a vertical layout, allowing you to click directly to jump to a tab.
 
