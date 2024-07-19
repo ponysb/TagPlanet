@@ -17,7 +17,7 @@ Currently, only Chrome and Edge browsers have been tested for perfect compatibil
 
 ## Installation
 You can install Tag Planet through the following methods:
-- Download the installer package: https://github.com/guanqun/label-star-dashboard/releases
+- Download the installer package: https://wwo.lanzouo.com/i0lD224yl0yb
 - Manual installation: Download the code, unzip it, and open the Developer mode in the browser's extension settings, then load the unzipped extension.
 - Chrome Web Store and Edge Add-ons Store are under review and will be released soon.
 
@@ -26,5 +26,7 @@ If you have any questions, feel free to reach out to me, and I will handle them 
 - You can contact me via WeChat: 1090879115
 - Email: pony618@foxmail.com
 - WeChat Group & Official Account
-![](./assets/wx.png)
-![](./assets/dingyue.png)
+
+![](./assets/wx.jpg)
+
+![](./assets/dingyue.jpeg)

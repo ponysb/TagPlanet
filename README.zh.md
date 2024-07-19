@@ -18,7 +18,7 @@
 
 ## 安装
 你可以通过以下方式安装标签星球：
-- **下载安装包**：https://github.com/guanqun/label-star-dashboard/releases
+- **下载安装包**：https://wwo.lanzouo.com/i0lD224yl0yb
 - **手动安装**：下载代码，解压后，在浏览器扩展程序中打开开发者模式，加载已解压的扩展程序。
 - chrome商城和edge商城还在审核中，稍后会发布到商城。
 
@@ -28,5 +28,7 @@
 - **可以通过微信联系我**：1090879115
 - **Email**：pony618@foxmail.com
 - 微信群 & 公众号
-![](./assets/wx.png)
-![](./assets/dingyue.png)
+
+![](./assets/wx.jpg)
+
+![](./assets/dingyue.jpeg)
