@@ -17,9 +17,10 @@ Currently, only Chrome and Edge browsers have been tested for perfect compatibil
 
 ## Installation
 You can install Tag Planet through the following methods:
-- Download the installer package: https://wwo.lanzouo.com/i0lD224yl0yb
+- **Chrome Web Store**：https://chromewebstore.google.com/detail/jeaebbdndojkbnnfcaihgokhnakocbnf
+- **Edge Add-ons Store**：https://microsoftedge.microsoft.com/addons/detail/podfjomopoejmlkfnhanlmlagcnlappd
+- **Download the installer package**: https://wwo.lanzouo.com/i0lD224yl0yb
 - Manual installation: Download the code, unzip it, and open the Developer mode in the browser's extension settings, then load the unzipped extension.
-- Chrome Web Store and Edge Add-ons Store are under review and will be released soon.
 
 # Feedback
 If you have any questions, feel free to reach out to me, and I will handle them promptly.

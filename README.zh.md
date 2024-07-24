@@ -18,6 +18,8 @@
 
 ## 安装
 你可以通过以下方式安装标签星球：
+- **Chrome商城**：https://chromewebstore.google.com/detail/jeaebbdndojkbnnfcaihgokhnakocbnf
+- **Edge商城**：https://microsoftedge.microsoft.com/addons/detail/podfjomopoejmlkfnhanlmlagcnlappd
 - **下载安装包**：https://wwo.lanzouo.com/i0lD224yl0yb
 - **手动安装**：下载代码，解压后，在浏览器扩展程序中打开开发者模式，加载已解压的扩展程序。
 - chrome商城和edge商城还在审核中，稍后会发布到商城。
