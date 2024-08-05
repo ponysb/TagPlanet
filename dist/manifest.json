@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "标签星球-给你的浏览器装个仪表盘",
+  "version": "1.1.0",
+  "permissions": [
+    "bookmarks",
+    "history",
+    "tabs"
+  ],
+  "description": "一个浏览器仪表盘，可以显示你常用的标签、历史记录、书签等信息。",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "16": "public/icons/icon16.png",
+    "48": "public/icons/icon48.png",
+    "128": "public/icons/icon128.png"
+  }
+}
